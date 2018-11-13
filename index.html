@@ -6,28 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="./scripts/jquery.js"></script>
     <script src="./scripts/modelo.js"></script>
     <script src="./scripts/vista.js"></script>
     <script src="./scripts/controlador.js"></script>
     <script src="./scripts/despachador_server.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
     <title>ABM SuperHeroes</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="./images/logoSuperHeroes.png" alt="logo superheroes" id="logo">
-        </div>
+       <!--     <img class="img-fluid" srcset="./images/logoSuperHeroes.png 480w,
+            ./images/sh-small2.png 800w"
+     sizes="(max-width: 480px) 440px,
+            800px"
+     alt="logo superheroes">-->
+     <picture>
+            <source media="(min-width: 300px)" class="img-fluid" srcset="./images/logoSuperHeroes.png">
+            <source media="(min-width: 200px)" srcset="./images/sh-small2.png">
+            <img src="./images/sh-small2.png" alt="Heroes" id="logo" class="img-fluid">
+          </picture>
     </header>
     <nav>
-        <input type="button" value="Agregar" id="btnAlta" class="puntero">
+        <input type="button" value="Agregar" id="btnAlta" class="btn-success">
     </nav>
 
     <div id="divFrm" class="frmAlta" hidden>
 
     </div>
-    <div id="divTabla">
+    <div id="divTabla" class="table table table-sm table-hover table-bordered">
         <table id="tablaLista">
             <thead>
                 <tr>

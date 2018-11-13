@@ -47,14 +47,13 @@ body{
     width: 500px;    
     position: relative;
     top: 50px;
-    left: 30px;
-    
+    left: 30px;   
 }
 
 header{
     
     margin-top: 0px;
-    height: 500px;    
+    height: 500px;
     background-image: url("../images/Superheroes-shadow-background-image_Grey.jpg");
 }
 
@@ -70,10 +69,10 @@ nav{
     padding: 10px;
 }
 
-#tablaLista td{
+/*#tablaLista td{
     background-color: rgb(221, 67, 98);
 }
-
+*/
 #tablaLista th{
     background-color: rgb(67, 82, 221);
 }
@@ -81,9 +80,9 @@ nav{
 #btnAlta{
 
     border-radius: 5px;
-    height: 30px;
+    /*height: 30px;
     width: 80px;
-    background-color: rgb(109, 216, 136);
+    background-color: rgb(109, 216, 136);*/
     
 }
 
@@ -93,3 +92,11 @@ nav{
 }
 
 
+@media (max-width: 500px) {
+    header{
+    
+        margin-top: 0px;
+        height: 200px;
+        background-image: url();
+    }
+  }
